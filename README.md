@@ -31,16 +31,16 @@ We evaluated both models using the test dataset (10,000 unseen images).
 
 | Model Architecture | Test Accuracy | Model Complexity | Training Speed |
 | :--- | :---: | :---: | :---: |
-| **Simple ANN** (Dense) | ~96.69% | 🟢 Low | ⚡ Very Fast |
-| **CNN** (Conv2D) | **~98.62%** | 🟠 Medium | 🐢 Slower |
+| **Simple ANN** (Dense) | ~97.29% | 🟢 Low | ⚡ Very Fast |
+| **CNN** (Conv2D) | **~98.76%** | 🟠 Medium | 🐢 Slower |
 
 ### Key Observations
 1.  **Spatial Awareness:** The **Simple ANN** treats the image as a flat list of pixels (784 numbers), losing all spatial relationships. If a digit is shifted slightly to the left, the ANN might get confused.
 2.  **Feature Extraction:** The **CNN** uses filters to detect shapes (edges, loops, curves) regardless of their position in the image. This makes it much more robust to variations in handwriting.
-3.  **The "2%" Gap:** While 96% sounds high, in a dataset of 10,000 images, the ANN fails on ~250 images, whereas the CNN only fails on ~90. That's a **significant reduction in error rate**.
+3.  **The "2%" Gap:** While 97% sounds high, in a dataset of 10,000 images, the ANN fails on ~250 images, whereas the CNN only fails on ~90. That's a **significant reduction in error rate**.
 
 ## 🏁 Conclusion
 
-This project demonstrates the significant advantage of using **Convolutional Neural Networks (CNN)** for image classification tasks. While the simple Dense Network (ANN) performed surprisingly well (~96%), the CNN achieved superior accuracy (~98%) by leveraging spatial data through **filters and pooling layers**. 
+This project demonstrates the significant advantage of using **Convolutional Neural Networks (CNN)** for image classification tasks. While the simple Dense Network (ANN) performed surprisingly well (~97%), the CNN achieved superior accuracy (~99%) by leveraging spatial data through **filters and pooling layers**. 
 
 This confirms that for visual data, preserving the 2D structure is crucial for minimizing error rates and building robust models.
