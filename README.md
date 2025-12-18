@@ -19,7 +19,7 @@ The goal is to correctly classify grayscale images (28x28 pixels) of handwritten
 
 ## 🛠️ Tech Stack
 
-* **Python 3.x**
+* **Python 3**
 * **TensorFlow / Keras** (Deep Learning)
 * **NumPy** (Data manipulation)
 * **Matplotlib** (Visualization of predictions and errors)
